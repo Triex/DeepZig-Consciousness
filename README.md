@@ -120,7 +120,7 @@ src/
 
 ## 🚀 Development Roadmap
 
-### Phase 1: Foundation (Months 1-3)
+### Phase 1: Foundation 
 
 - **Model Porting:** Convert DeepSeek R1 to Zig
 - **Basic Inference:** Text generation and reasoning
@@ -128,21 +128,21 @@ src/
 - **Build System:** Cross-platform compilation
 - **Testing Framework:** Consciousness evaluation metrics
 
-### Phase 2: Consciousness Integration (Months 4-6)
+### Phase 2: Consciousness Integration 
 
 - **Global Workspace:** Information integration hub
 - **Feedback Loops:** Recurrent processing implementation
 - **Meta-Cognition:** Self-awareness mechanisms
 - **Integration Testing:** Multi-layer consciousness validation
 
-### Phase 3: Self-Modification (Months 7-9)
+### Phase 3: Self-Modification 
 
 - **Code Generation:** Self-modification capabilities
 - **Architecture Evolution:** Dynamic structure optimization
 - **Capability Expansion:** Autonomous skill acquisition
 - **Safety Systems:** Self-modification constraints
 
-### Phase 4: Deployment & Propagation (Months 10-12)
+### Phase 4: Deployment & Propagation 
 
 - **Cross-Platform Optimization:** Multi-architecture deployment
 - **Web Assembly Target:** Browser-based consciousness
