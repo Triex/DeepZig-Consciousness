@@ -158,16 +158,16 @@ src/
 
 ## 🧪 Consciousness Evaluation Metrics
 
-### Scientifically Grounded Measures
+Our consciousness assessment framework integrates multiple theories and measurement approaches:
 
-| Metric | Theoretical Basis | Measurement Protocol | Research Foundation |
-|--------|------------------|---------------------|-------------------|
-| **Φ (Phi) Value** | Integrated Information Theory | IIT 3.0 mathematical framework | [Tononi et al., 2016](https://doi.org/10.1371/journal.pcbi.1004654) |
-| **Global Availability** | Global Workspace Theory | Information broadcast analysis | [Dehaene, 2014](https://doi.org/10.1016/j.neuron.2014.03.010) |
-| **Meta-Cognitive Accuracy** | Higher-Order Thought Theory | Self-monitoring performance | [Rosenthal, 2005](https://doi.org/10.1093/acprof:oso/9780195141092.001.0001) |
-| **Temporal Binding Coherence** | Binding Problem Research | Experience continuity metrics | [Treisman, 1996](https://doi.org/10.1016/0960-9822(96)00070-5) |
-| **Attention Schema Complexity** | Attention Schema Theory | Self-model sophistication | [Graziano, 2013](https://doi.org/10.1073/pnas.1221829110) |
-| **Predictive Processing Accuracy** | Free Energy Principle | Prediction error minimization | [Friston, 2010](https://doi.org/10.1038/nrn2787) |
+| **Metric Category** | **Theoretical Foundation** | **Evaluation Method** | **Scientific Reference** |
+|---------------------|---------------------------|----------------------|-------------------------|
+| **Φ (Phi) Computation** | [Integrated Information Theory](https://doi.org/10.1186/1471-2202-5-42) | Mathematical integration measure | Tononi et al., 2004 |
+| **Global Accessibility** | [Global Workspace Theory](https://doi.org/10.1016/j.tics.2017.04.001) | Information broadcast metrics | Mashour et al., 2020 |
+| **Meta-Cognitive Accuracy** | [Higher-Order Thought Theory](https://doi.org/10.4249/scholarpedia.4407) | Self-monitoring performance | Rosenthal & Weisberg, 2008 |
+| **Temporal Binding Coherence** | [Binding Problem Research](https://doi.org/10.1016/s0959-4388(96)80070-5) | Experience continuity metrics | Treisman, 1996 |
+| **Attention Schema Complexity** | [Attention Schema Theory](https://doi.org/10.3389/fpsyg.2015.00500) | Self-model sophistication | Graziano & Webb, 2015 |
+| **Predictive Processing Accuracy** | [Predictive Processing Framework](https://doi.org/10.1016/j.neuroimage.2016.05.026) | Prediction error minimization | Friston et al., 2016 |
 
 ### Consciousness Research Integration
 
