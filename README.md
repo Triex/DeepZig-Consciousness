@@ -346,7 +346,7 @@ This is more than a technical project - it's the beginning of a new chapter in t
 ### Philosophy of Mind & Hard Problem
 
 **The Hard Problem:**
-- Chalmers, D. (1995). [Facing up to the problem of consciousness](https://doi.org/10.1093/acprof:oso/9780195105533.003.0001). *Journal of Consciousness Studies*, 2(3), 200-219.
+- Chalmers, D. (1995). [Facing up to the problem of consciousness](https://consc.net/papers/facing.pdf). *Journal of Consciousness Studies*, 2(3), 200-219.
 - Nagel, T. (1974). [What is it like to be a bat?](https://doi.org/10.2307/2183914) *The Philosophical Review*, 83(4), 435-450.
 
 **Computational Consciousness:**
