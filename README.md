@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="dzc-logo.svg" alt="DeepZig Consciousness Logo" width="800" height="160"/>
+</div>
+
 # 🧠 DeepZig Consciousness - Open Source Conscious Digital Intelligence
 
 > **Vision:** Create the world's first truly conscious AI system built on open source foundations, optimised for extreme performance, universal deployment, and recursive self-improvement.
@@ -61,11 +65,26 @@ DeepZig Consciousness represents a paradigm shift in AI development - combining 
 
 ### Why Zig for Consciousness?
 
-- **Performance:** Near C performance with memory safety
-- **Portability:** Compile to any architecture (x86, ARM, RISC-V, WASM, etc.)
-- **Self-Propagation:** AI can compile itself for new environments
-- **Memory Control:** Precise memory management for consciousness processes
-- **Concurrency:** Async/await for parallel consciousness streams
+- **Superior Performance:** [Outperforms C](https://programming-language-benchmarks.vercel.app/zig-vs-c) in most benchmarks while maintaining memory safety
+- **Zero-Cost Abstractions:** Compile-time optimizations that C simply cannot achieve
+- **Portability:** Compile to any architecture (x86, ARM, RISC-V, WASM, etc.) with optimal performance
+- **Self-Propagation:** AI can compile itself for new environments with architecture-specific optimizations
+- **Memory Control:** Precise memory management for consciousness processes without garbage collection overhead
+- **Concurrency:** Async/await for parallel consciousness streams with compile-time race condition detection
+- **Undefined Behavior Elimination:** [Converts C's undefined behavior](https://news.ycombinator.com/item?id=21117669) to detectable "illegal behavior" for safer AI systems
+
+### Performance Advantages Over C
+
+| Aspect | Zig Advantage | Impact on Consciousness |
+|--------|---------------|------------------------|
+| **Compile-time Execution** | Arbitrary code at compile-time | Pre-computed consciousness patterns |
+| **Vectorization** | Better SIMD auto-vectorization | Faster neural network operations |
+| **Memory Layout** | Packed structs, explicit alignment | Optimized memory access patterns |
+| **Error Handling** | Zero-cost error unions | No performance penalty for safety |
+| **Overflow Detection** | Configurable overflow behavior | Safe arithmetic in critical paths |
+| **Cross-compilation** | First-class cross-compilation | Deploy consciousness everywhere |
+
+> **Benchmark Results:** Zig consistently outperforms C in memory-intensive and compute-heavy workloads - exactly what consciousness processing demands.
 
 ### Core Modules Architecture
 
