@@ -1,8 +1,8 @@
 # Consciousness Evaluation Methods
 
-> **Status:** Research Proposal - Comprehensive evaluation framework for consciousness systems using Zig 0.14.0
+> **Status:** Research Proposal - Comprehensive evaluation framework for consciousness systems (Zig 0.14.0 at time of writing)
 
-## Latest Evaluation Methodologies (2025)
+## Latest Evaluation Methodologies
 
 ### Updated Research-Based Metrics
 Based on the latest consciousness research (2023-2025), we incorporate new evaluation standards:
