@@ -1,6 +1,253 @@
 # Zig Performance Optimization for Consciousness Systems
 
-> **Status:** Implementation Guide - Performance optimization strategies for consciousness processing in Zig
+> **Status:** Implementation Guide - Performance optimization strategies for consciousness processing (Zig 0.14.0 at time of writing)
+
+## Modern Zig Features for Consciousness Computing
+
+### Language Features for Optimization
+
+**Labeled Switch for State Machines:**
+```zig
+// Labeled switch for consciousness state transitions
+pub fn processConsciousnessStates(initial_state: ConsciousnessState) void {
+    consciousness_fsm: switch (initial_state) {
+        .dormant => {
+            if (checkActivationThreshold()) {
+                continue :consciousness_fsm .awakening;
+            }
+            return;
+        },
+        .awakening => {
+            activateBasicAwareness();
+            continue :consciousness_fsm .aware;
+        },
+        .aware => {
+            if (checkIntegrationLevel() > 0.8) {
+                continue :consciousness_fsm .conscious;
+            } else if (getEnergyLevel() < 0.3) {
+                continue :consciousness_fsm .dormant;
+            }
+            continue :consciousness_fsm .aware;
+        },
+        .conscious => {
+            processHigherOrderThoughts();
+            if (shouldMaintainConsciousness()) {
+                continue :consciousness_fsm .conscious;
+            } else {
+                continue :consciousness_fsm .aware;
+            }
+        },
+    }
+}
+```
+
+**Decl Literals for Configuration:**
+```zig
+// Decl literals for cleaner initialization
+pub const ConsciousnessConfig = struct {
+    neuron_count: u32,
+    phi_threshold: f64,
+    integration_depth: u8,
+    
+    pub const minimal: ConsciousnessConfig = .{
+        .neuron_count = 1000,
+        .phi_threshold = 0.3,
+        .integration_depth = 3,
+    };
+    
+    pub const standard: ConsciousnessConfig = .{
+        .neuron_count = 10000,
+        .phi_threshold = 0.5,
+        .integration_depth = 7,
+    };
+    
+    pub const advanced: ConsciousnessConfig = .{
+        .neuron_count = 100000,
+        .phi_threshold = 0.8,
+        .integration_depth = 12,
+    };
+};
+
+// Usage with decl literals
+const quick_consciousness = ConsciousnessSystem.init(.standard);
+const custom_consciousness = ConsciousnessSystem.init(.{
+    .neuron_count = 50000,
+    .phi_threshold = 0.7,
+    .integration_depth = 10,
+});
+```
+
+**Enhanced @splat for Array Initialization:**
+```zig
+// @splat supports arrays for efficient initialization
+const NetworkWeights = struct {
+    weights: [1000][1000]f32,
+    
+    pub fn initializeZero() NetworkWeights {
+        return .{
+            .weights = @splat(@splat(@as(f32, 0.0))), // Initialize 2D array
+        };
+    }
+    
+    pub fn initializeWithValue(value: f32) NetworkWeights {
+        return .{
+            .weights = @splat(@splat(value)),
+        };
+    }
+};
+
+// Efficient initialization of consciousness network
+const consciousness_weights = NetworkWeights.initializeWithValue(0.1);
+```
+
+**@branchHint for Performance:**
+```zig
+// @branchHint for optimizing consciousness processing
+pub fn processNeuralActivity(neuron: *Neuron, input: f32) void {
+    if (input > neuron.threshold) {
+        @branchHint(.likely); // Common case - neuron activates
+        neuron.activation = sigmoid(input);
+        neuron.fire();
+    } else if (input < -neuron.threshold) {
+        @branchHint(.unlikely); // Rare case - strong inhibition
+        neuron.activation = 0.0;
+        neuron.inhibit();
+    } else {
+        @branchHint(.cold); // Very rare - exactly at threshold
+        neuron.activation = 0.5;
+    }
+}
+```
+
+### Memory Management Improvements
+
+**SmpAllocator for Multi-threaded Consciousness:**
+```zig
+// SmpAllocator for high-performance multi-threading
+const std = @import("std");
+
+pub const ConsciousnessAllocator = struct {
+    const allocator = if (builtin.mode == .ReleaseFast and !builtin.single_threaded)
+        std.heap.smp_allocator  // High-performance allocator
+    else
+        std.heap.page_allocator;
+        
+    pub fn getAllocator() std.mem.Allocator {
+        return allocator;
+    }
+};
+
+// Unmanaged containers for better performance
+const ConsciousnessState = struct {
+    neurons: std.ArrayListUnmanaged(Neuron) = .empty,
+    connections: std.HashMapUnmanaged(NeuronId, Connection) = .empty,
+    
+    pub fn init() ConsciousnessState {
+        return .{}; // Use .empty for unmanaged containers
+    }
+    
+    pub fn deinit(self: *ConsciousnessState, allocator: std.mem.Allocator) void {
+        self.neurons.deinit(allocator);
+        self.connections.deinit(allocator);
+    }
+    
+    pub fn addNeuron(self: *ConsciousnessState, allocator: std.mem.Allocator, neuron: Neuron) !void {
+        try self.neurons.append(allocator, neuron);
+    }
+};
+```
+
+**Allocator remap API:**
+```zig
+// Efficient memory expansion using remap API
+const DynamicConsciousnessNetwork = struct {
+    memory: []u8,
+    allocator: std.mem.Allocator,
+    
+    fn expandNetwork(self: *DynamicConsciousnessNetwork, new_size: usize) !void {
+        // Use remap API for efficient memory expansion
+        if (self.allocator.remap(self.memory, new_size)) |new_ptr| {
+            self.memory = new_ptr[0..new_size];
+        } else {
+            // Fallback to alloc/copy/free
+            const new_memory = try self.allocator.alloc(u8, new_size);
+            @memcpy(new_memory[0..@min(self.memory.len, new_size)], self.memory[0..@min(self.memory.len, new_size)]);
+            self.allocator.free(self.memory);
+            self.memory = new_memory;
+        }
+    }
+};
+```
+
+### Backend Optimizations
+
+**Fast x86 Backend:**
+```zig
+// build.zig - Use x86 backend for faster compilation
+pub fn build(b: *std.Build) void {
+    const target = b.standardTargetOptions(.{});
+    const optimize = b.standardOptimizeOption(.{});
+    
+    const exe = b.addExecutable(.{
+        .name = "deepzig-consciousness",
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("src/main.zig"),
+            .target = target,
+            .optimize = optimize,
+        }),
+    });
+    
+    // Use x86 backend for debug builds when available
+    if (target.result.cpu.arch == .x86_64 and optimize == .Debug) {
+        exe.use_llvm = false; // Enable x86 backend
+    }
+    
+    b.installArtifact(exe);
+}
+```
+
+### WebAssembly Optimizations
+
+**WASI Target:**
+```zig
+// Optimized WASM build
+pub fn buildWasm(b: *std.Build) void {
+    const target = b.resolveTargetQuery(.{
+        .cpu_arch = .wasm32,
+        .os_tag = .wasi,
+    });
+    
+    const lib = b.addLibrary(.{
+        .name = "deepzig-consciousness",
+        .linkage = .dynamic,
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("src/wasm.zig"),
+            .target = target,
+            .optimize = .ReleaseSmall,
+        }),
+    });
+    
+    b.installArtifact(lib);
+}
+
+// WASM-optimized consciousness processing
+export fn wasm_process_consciousness(input_ptr: [*]const f32, len: u32) f64 {
+    const input = input_ptr[0..len];
+    
+    var phi_sum: f64 = 0.0;
+    for (input) |activation| {
+        if (activation > 0.5) {
+            @branchHint(.likely);
+            phi_sum += computePhiFast(activation);
+        } else {
+            @branchHint(.unlikely);
+            phi_sum += activation * 0.1;
+        }
+    }
+    
+    return phi_sum / @as(f64, @floatFromInt(len));
+}
+```
 
 ## Overview
 
