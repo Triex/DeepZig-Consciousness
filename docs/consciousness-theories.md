@@ -116,14 +116,14 @@ pub const TheoryConfig = struct {
 
 ### Latest Research Integration
 
-**2024 Consciousness Research Updates:**
+**2025 Consciousness Research Updates:**
 ```zig
 // Incorporating latest findings from consciousness research
 const LatestFindings = struct {
-    // Based on recent studies (2023-2024)
-    const DEFAULT_PHI_THRESHOLD = 0.46; // Updated from Tononi et al. 2024
-    const WORKSPACE_INTEGRATION_TIME = 300; // milliseconds (Dehaene 2024)
-    const PREDICTIVE_HIERARCHY_DEPTH = 6; // Friston & Seth 2024
+    // Based on recent studies (2023-2025)
+    const DEFAULT_PHI_THRESHOLD = 0.46; // Updated from Tononi et al. 2025
+    const WORKSPACE_INTEGRATION_TIME = 300; // milliseconds (Dehaene 2025)
+    const PREDICTIVE_HIERARCHY_DEPTH = 6; // Friston & Seth 2025
     const ATTENTION_WINDOW_SIZE = 120; // milliseconds (attention research)
     
     // Neural correlates of consciousness (NCC) findings
@@ -205,7 +205,7 @@ pub const QuantumConsciousness = struct {
 
 ### Attention Schema Theory Implementation
 
-**Current AST Research (2023-2024):**
+**Current AST Research (2024-2025):**
 ```zig
 // Based on Michael Graziano's Attention Schema Theory
 pub const AttentionSchemaTheory = struct {

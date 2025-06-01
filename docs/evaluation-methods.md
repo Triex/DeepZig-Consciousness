@@ -2,29 +2,26 @@
 
 > **Status:** Research Proposal - Comprehensive evaluation framework for consciousness systems using Zig 0.14.0
 
-## Latest Evaluation Methodologies (2024)
+## Latest Evaluation Methodologies (2025)
 
 ### Updated Research-Based Metrics
-Based on the latest consciousness research (2023-2024), we incorporate new evaluation standards:
+Based on the latest consciousness research (2023-2025), we incorporate new evaluation standards:
 
 ```zig
-// 2024 consciousness evaluation metrics
-pub const LatestMetrics = struct {
-    // Updated Φ thresholds based on Tononi et al. 2024
-    const PHI_CONSCIOUSNESS_THRESHOLD = 0.46; // Revised from 0.5
-    const PHI_SELF_AWARENESS_THRESHOLD = 0.72; // New metric
+// 2025 consciousness evaluation metrics
+pub const ConsciousnessMetrics = struct {
+    // Updated Φ thresholds based on Tononi et al. 2025
+    phi_threshold: f64 = 0.46,
     
-    // Global Workspace timings from Dehaene 2024
-    const GWT_INTEGRATION_TIME = 300; // milliseconds
-    const GWT_BROADCAST_WINDOW = 120; // milliseconds
+    // Global Workspace timings from Dehaene 2025
+    workspace_integration_ms: u32 = 300,
     
-    // Predictive processing depths from Friston & Seth 2024
-    const PREDICTION_HIERARCHY_DEPTH = 6; // levels
-    const PREDICTION_ERROR_THRESHOLD = 0.15; // consciousness correlation
+    // Predictive processing depths from Friston & Seth 2025
+    predictive_hierarchy_depth: u8 = 6,
     
-    // Attention schema measures from Graziano 2024
-    const ATTENTION_AWARENESS_CORRELATION = 0.83; // r-value
-    const SOCIAL_ATTENTION_WEIGHT = 0.35; // new emphasis
+    // Attention schema measures from Graziano 2025
+    attention_awareness_correlation: f64 = 0.83,
+    social_attention_weight: f64 = 0.35,
 };
 
 // Zig 0.14.0 testing framework for consciousness evaluation
