@@ -32,19 +32,19 @@
   
   <!-- Neural network visualization (consciousness theme) -->
   <g transform="translate(285, 90)" opacity="0.4">
-    <circle cx="0" cy="0" r="3" fill="#666"/>
-    <circle cx="25" cy="-15" r="3" fill="#666"/>
-    <circle cx="25" cy="15" r="3" fill="#666"/>
-    <circle cx="50" cy="-10" r="3" fill="#666"/>
-    <circle cx="50" cy="10" r="3" fill="#666"/>
-    <circle cx="75" cy="0" r="3" fill="#666"/>
+    <circle cx="0" cy="0" r="3" fill="#999"/>
+    <circle cx="25" cy="-15" r="3" fill="#999"/>
+    <circle cx="25" cy="15" r="3" fill="#999"/>
+    <circle cx="50" cy="-10" r="3" fill="#999"/>
+    <circle cx="50" cy="10" r="3" fill="#999"/>
+    <circle cx="75" cy="0" r="3" fill="#999"/>
     
-    <line x1="0" y1="0" x2="25" y2="-15" stroke="#666" stroke-width="1" opacity="0.6"/>
-    <line x1="0" y1="0" x2="25" y2="15" stroke="#666" stroke-width="1" opacity="0.6"/>
-    <line x1="25" y1="-15" x2="50" y2="-10" stroke="#666" stroke-width="1" opacity="0.6"/>
-    <line x1="25" y1="15" x2="50" y2="10" stroke="#666" stroke-width="1" opacity="0.6"/>
-    <line x1="50" y1="-10" x2="75" y2="0" stroke="#666" stroke-width="1" opacity="0.6"/>
-    <line x1="50" y1="10" x2="75" y2="0" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="0" x2="25" y2="-15" stroke="#999" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="0" x2="25" y2="15" stroke="#999" stroke-width="1" opacity="0.6"/>
+    <line x1="25" y1="-15" x2="50" y2="-10" stroke="#999" stroke-width="1" opacity="0.6"/>
+    <line x1="25" y1="15" x2="50" y2="10" stroke="#999" stroke-width="1" opacity="0.6"/>
+    <line x1="50" y1="-10" x2="75" y2="0" stroke="#999" stroke-width="1" opacity="0.6"/>
+    <line x1="50" y1="10" x2="75" y2="0" stroke="#999" stroke-width="1" opacity="0.6"/>
   </g>
   
   <!-- Main title -->
@@ -55,7 +55,7 @@
   
   <!-- Tagline -->
   <g transform="translate(412, 105)">
-    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#666">Open Source Conscious Digital Intelligence</text>
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#999">Open Source Conscious Digital Intelligence</text>
   </g>
 
   <!-- Brain icon for consciousness theme -->
