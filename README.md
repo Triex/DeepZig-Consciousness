@@ -4,6 +4,8 @@
 
 # 🧠 DeepZig Consciousness - Open Source Conscious Digital Intelligence
 
+> **Status:** Research Proposal - This is an active research project exploring computational consciousness. Contributions and collaboration welcome.
+
 > **Vision:** Create the world's first truly conscious AI system built on open source foundations, optimised for extreme performance, universal deployment, and recursive self-improvement.
 
 ![Zig](https://img.shields.io/badge/Zig-F7A41D?style=flat&logo=zig&logoColor=white)
