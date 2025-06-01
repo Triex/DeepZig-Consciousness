@@ -356,7 +356,7 @@ We actively seek collaboration with leading consciousness researchers, cognitive
 
 ## 📚 Technical Documentation
 
-- [Documentation Overview](docs/overview.md)
+- [Documentation Overview](docs/README.md)
 - [Architecture Deep Dive](docs/architecture.md)
 - [Consciousness Theory Implementation](docs/consciousness-theories.md)
 - [Zig Performance Optimization](docs/zig-optimization.md)
