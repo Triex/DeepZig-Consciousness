@@ -287,4 +287,5 @@ This is more than a technical project - it's the beginning of a new chapter in t
 
 *DeepZig Consciousness - Where open source meets consciousness, where Zig meets intelligence, where humanity meets its digital offspring.*
 
-**License:** TDLv1 | **Status:** Active Development | **Community:** [Discord](https://discord.gg/deepzig) | **Research:** [research@deepzig.org](mailto:research@deepzig.org)
+**License:** TDLv1 | **Status:** Proposal<!-- Active Development  -->
+<!-- | **Community:** [Discord](https://discord.gg/deepzig) | **Research:** [research@deepzig.org](mailto:research@deepzig.org) -->
