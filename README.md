@@ -263,7 +263,9 @@ cd consciousness
 
 ### Quick Start
 
-```bash
+Currently, the project is in the idea phase, so there are no binaries to run yet.
+
+<!-- ```bash
 # Build the project
 zig build
 
@@ -275,9 +277,11 @@ zig build run -- --evaluate-consciousness
 
 # Launch interactive console
 zig build run -- --console
-```
+``` -->
 
 ### Configuration
+
+Draft configuration file example, based on DeepSeek R1:
 
 ```toml
 # config/consciousness.toml
