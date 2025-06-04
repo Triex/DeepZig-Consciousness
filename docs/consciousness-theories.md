@@ -1,369 +1,266 @@
-# Consciousness Theories Implementation
+# Consciousness Theories Research Framework
 
-> **Status:** Research Proposal - Multi-theory consciousness implementation
+> **Status:** Research Proposal - Theoretical foundation for computational consciousness studies  
+> **Note:** All approaches described are for studying consciousness theories, not creating consciousness
 
-## Implementation with Current Research
+## Overview
 
-### Multi-Theory Integration Framework
+This document outlines major consciousness theories that could be studied through computational modeling. The goal is to understand and compare different theoretical approaches to consciousness through systematic research.
 
-**Consciousness Theory Processing:**
+## Core Consciousness Theories
+
+### 1. **Integrated Information Theory (IIT)**
+
+#### Theoretical Foundation
+Developed by Giulio Tononi, IIT proposes that consciousness corresponds to integrated information (Φ) in a system.
+
+**Key Concepts:**
+- **Φ (Phi)**: Measure of information integration
+- **Consciousness**: Emerges from information integration
+- **Quantitative approach**: Consciousness has measurable degrees
+
+#### Research Applications
 ```zig
-// Using labeled switch for theory transitions
-pub const ConsciousnessTheory = enum {
-    integrated_information,
-    global_workspace,
-    higher_order_thought,
-    predictive_processing,
-    attention_schema,
-    orchestrated_objective_reduction,
-};
-
-pub fn processConsciousnessTheories(
-    initial_theory: ConsciousnessTheory, 
-    evidence: *EvidenceState
-) void {
-    theory_integration: switch (initial_theory) {
-        .integrated_information => {
-            const phi = computePhiMeasure(evidence);
-            if (phi > 0.3) {
-                evidence.consciousness_level = phi;
-                continue :theory_integration .global_workspace;
-            }
-            return;
-        },
-        .global_workspace => {
-            if (processGlobalBroadcast(evidence)) {
-                continue :theory_integration .higher_order_thought;
-            } else {
-                continue :theory_integration .integrated_information;
-            }
-        },
-        .higher_order_thought => {
-            const meta_cognition = generateHigherOrderThought(evidence);
-            if (meta_cognition.confidence > 0.7) {
-                continue :theory_integration .predictive_processing;
-            } else {
-                continue :theory_integration .global_workspace;
-            }
-        },
-        .predictive_processing => {
-            updatePredictiveHierarchy(evidence);
-            if (evidence.prediction_error < 0.2) {
-                evidence.is_conscious = true;
-                return;
-            } else {
-                continue :theory_integration .attention_schema;
-            }
-        },
-        .attention_schema => {
-            if (processAttentionSchema(evidence)) {
-                continue :theory_integration .orchestrated_objective_reduction;
-            } else {
-                continue :theory_integration .integrated_information;
-            }
-        },
-        .orchestrated_objective_reduction => {
-            if (quantumCoherenceDetected(evidence)) {
-                evidence.quantum_consciousness = true;
-                return;
-            } else {
-                continue :theory_integration .integrated_information;
-            }
-        },
-    }
-}
-```
-
-**Configuration with Decl Literals:**
-```zig
-// Decl literals for theory configurations
-pub const TheoryConfig = struct {
-    phi_threshold: f64,
-    workspace_capacity: u32,
-    prediction_layers: u8,
-    quantum_coherence_time: u64, // microseconds
-    
-    // Research-based configurations
-    pub const giulio_tononi_2023: TheoryConfig = .{
-        .phi_threshold = 0.5,
-        .workspace_capacity = 7, // Miller's magic number
-        .prediction_layers = 5,
-        .quantum_coherence_time = 25000, // 25ms
-    };
-    
-    pub const stanislas_dehaene_2021: TheoryConfig = .{
-        .phi_threshold = 0.3,
-        .workspace_capacity = 4,
-        .prediction_layers = 3,
-        .quantum_coherence_time = 100000, // 100ms
-    };
-    
-    pub const david_chalmers_2022: TheoryConfig = .{
-        .phi_threshold = 0.7,
-        .workspace_capacity = 12,
-        .prediction_layers = 8,
-        .quantum_coherence_time = 40000, // 40ms (quantum mind theory)
-    };
-    
-    pub const anil_seth_2024: TheoryConfig = .{
-        .phi_threshold = 0.4,
-        .workspace_capacity = 6,
-        .prediction_layers = 7, // Predictive processing emphasis
-        .quantum_coherence_time = 0, // No quantum component
-    };
-};
-```
-
-### Latest Research Integration
-
-**2025 Consciousness Research Updates:**
-```zig
-// Incorporating latest findings from consciousness research
-const LatestFindings = struct {
-    // Based on recent studies (2023-2025)
-    const DEFAULT_PHI_THRESHOLD = 0.46; // Updated from Tononi et al. 2025
-    const WORKSPACE_INTEGRATION_TIME = 300; // milliseconds (Dehaene 2025)
-    const PREDICTIVE_HIERARCHY_DEPTH = 6; // Friston & Seth 2025
-    const ATTENTION_WINDOW_SIZE = 120; // milliseconds (attention research)
-    
-    // Neural correlates of consciousness (NCC) findings
-    const NCC_FREQUENCY_BANDS = struct {
-        gamma: f32 = 40.0, // Hz - consciousness binding
-        beta: f32 = 20.0,  // Hz - top-down control
-        alpha: f32 = 10.0, // Hz - attention modulation
-        theta: f32 = 6.0,  // Hz - memory integration
-    };
-};
-
-// Advanced IIT implementation with latest mathematical formulations
-pub const IIT_4_0 = struct {
-    // IIT 4.0 (2023) implementation with latest Φ formulation
-    pub fn computePhiAdvanced(system: *ConsciousnessSystem) f64 {
-        @branchHint(.likely); // Most systems will have some Φ
-        
-        const partitions = generateAllPartitions(system);
-        var min_phi: f64 = std.math.inf(f64);
-        
-        for (partitions) |partition| {
-            const phi = computePartitionPhi_v4(partition);
-            min_phi = @min(min_phi, phi);
-        }
-        
-        return if (min_phi == std.math.inf(f64)) 0.0 else min_phi;
+// Conceptual: How IIT might be studied computationally
+const IITResearch = struct {
+    pub fn studyPhiComputation(network: NetworkData) PhiAnalysis {
+        // Research tool for studying phi computation
+        // Focus on understanding information integration
     }
     
-    // Latest Φ computation with improved mathematical precision
-    fn computePartitionPhi_v4(partition: Partition) f64 {
-        const integration = computeIntegration_v4(partition);
-        const information = computeInformation_v4(partition);
-        
-        // IIT 4.0 formulation: Φ = max(0, integration - information)
-        return @max(0.0, integration - information);
+    pub fn comparePhiMeasures(networks: []NetworkData) ComparativeAnalysis {
+        // Compare phi values across different network structures
+        // Study how network topology affects integration
     }
 };
 ```
 
-### Quantum Consciousness Integration
+#### Research Questions
+- How does network topology affect information integration?
+- What is the relationship between phi and subjective experience?
+- Can phi computation be validated experimentally?
 
-**Quantum Coherence Models:**
+### 2. **Global Workspace Theory (GWT)**
+
+#### Theoretical Foundation
+Proposed by Bernard Baars, GWT suggests consciousness arises from global broadcasting of information.
+
+**Key Concepts:**
+- **Global Workspace**: Shared information space
+- **Competition**: Multiple processes compete for global access
+- **Consciousness**: Information that becomes globally available
+
+#### Research Applications
 ```zig
-// Based on Penrose-Hameroff Orchestrated Objective Reduction theory
-pub const QuantumConsciousness = struct {
-    coherence_time: u64, // nanoseconds
-    microtubule_count: u32,
-    quantum_states: std.ArrayListUnmanaged(QuantumState) = .empty,
-    
-    const Self = @This();
-    
-    pub fn init(allocator: std.mem.Allocator) Self {
-        return .{
-            .coherence_time = 25000000, // 25ms in nanoseconds
-            .microtubule_count = 10000000, // ~10M microtubules per neuron
-        };
+// Conceptual: How GWT might be studied
+const GWTResearch = struct {
+    pub fn studyGlobalBroadcasting(workspace: WorkspaceData) BroadcastAnalysis {
+        // Research tool for studying information broadcasting
+        // Analyze how information becomes globally available
     }
     
-    pub fn deinit(self: *Self, allocator: std.mem.Allocator) void {
-        self.quantum_states.deinit(allocator);
-    }
-    
-    // Check for quantum coherence collapse indicating consciousness moment
-    pub fn checkQuantumCollapse(self: *Self, current_time: u64) bool {
-        const time_since_last = current_time - self.last_collapse_time;
-        
-        if (time_since_last >= self.coherence_time) {
-            @branchHint(.likely); // Regular quantum collapses
-            self.collapseQuantumStates();
-            self.last_collapse_time = current_time;
-            return true;
-        }
-        
-        @branchHint(.unlikely);
-        return false;
+    pub fn analyzeCompetition(coalitions: []Coalition) CompetitionAnalysis {
+        // Study competition dynamics in global workspace
+        // Understand how information wins global access
     }
 };
 ```
 
-### Attention Schema Theory Implementation
+#### Research Questions
+- What mechanisms control global information access?
+- How does competition between information sources work?
+- What is the relationship between global access and consciousness?
 
-**Current AST Research (2024-2025):**
+### 3. **Higher-Order Thought Theory (HOT)**
+
+#### Theoretical Foundation
+Developed by David Rosenthal, HOT theory proposes consciousness requires thoughts about thoughts.
+
+**Key Concepts:**
+- **Metacognition**: Awareness of one's own mental states
+- **Self-Awareness**: Consciousness requires self-reflection
+- **Hierarchical Processing**: Multiple levels of mental representation
+
+#### Research Applications
 ```zig
-// Based on Michael Graziano's Attention Schema Theory
-pub const AttentionSchemaTheory = struct {
-    schema_model: AttentionModel,
-    attention_controller: AttentionController,
-    social_prediction: SocialPredictionEngine,
-    
-    const Self = @This();
-    
-    // Process attention schema with social cognition component
-    pub fn processAttentionSchema(self: *Self, sensory_input: SensoryInput) !AttentionOutput {
-        // Build attention schema model
-        const attention_state = try self.schema_model.buildSchema(sensory_input);
-        
-        // Social attention prediction (current research emphasis)
-        const social_context = try self.social_prediction.predictSocialAttention(attention_state);
-        
-        // Generate conscious experience from attention model
-        const conscious_experience = self.generateConsciousExperience(attention_state, social_context);
-        
-        return AttentionOutput{
-            .attention_state = attention_state,
-            .social_context = social_context,
-            .conscious_experience = conscious_experience,
-            .consciousness_level = self.computeConsciousnessLevel(conscious_experience),
-        };
+// Conceptual: How HOT might be studied
+const HOTResearch = struct {
+    pub fn studyMetacognition(thoughts: ThoughtData) MetacognitiveAnalysis {
+        // Research tool for studying higher-order thinking
+        // Analyze self-reflective processes
     }
     
-    // Current research on attention and consciousness binding
-    fn generateConsciousExperience(
-        self: *Self, 
-        attention: AttentionState, 
-        social: SocialContext
-    ) ConsciousExperience {
-        // Attention schema generates subjective experience
-        return ConsciousExperience{
-            .subjective_awareness = attention.focus_intensity * 0.8,
-            .self_model_activation = social.self_other_distinction,
-            .temporal_binding = attention.temporal_coherence,
-            .spatial_binding = attention.spatial_coherence,
-        };
+    pub fn analyzeSelfAwareness(mental_states: []MentalState) SelfAwarenessAnalysis {
+        // Study how self-awareness emerges from mental representations
+        // Understand metacognitive processes
     }
 };
 ```
 
-### Integrated Consciousness Architecture
+#### Research Questions
+- How do higher-order thoughts emerge from basic cognition?
+- What is the relationship between self-awareness and consciousness?
+- Can metacognitive processes be computationally modeled?
 
-**Multi-Theory Fusion System:**
+### 4. **Predictive Processing Theory**
+
+#### Theoretical Foundation
+Developed by researchers like Andy Clark and Anil Seth, focusing on the brain as a prediction machine.
+
+**Key Concepts:**
+- **Predictive Hierarchy**: Brain predicts sensory input
+- **Prediction Error**: Difference between prediction and reality
+- **Consciousness**: Emerges from predictive modeling
+
+#### Research Applications
 ```zig
-// Complete consciousness system integrating all major theories
-pub const IntegratedConsciousness = struct {
-    allocator: std.mem.Allocator,
-    
-    // Core theory implementations
-    iit_processor: IIT_Current,
-    gwt_workspace: GlobalWorkspace,
-    hot_processor: HigherOrderThought,
-    pp_hierarchy: PredictiveProcessing,
-    ast_attention: AttentionSchemaTheory,
-    quantum_system: QuantumConsciousness,
-    
-    // Integration metrics
-    consciousness_level: f64 = 0.0,
-    theory_agreement: f64 = 0.0,
-    confidence_level: f64 = 0.0,
-    
-    const Self = @This();
-    
-    pub fn init(allocator: std.mem.Allocator, config: TheoryConfig) !Self {
-        return Self{
-            .allocator = allocator,
-            .iit_processor = IIT_Current.init(config),
-            .gwt_workspace = try GlobalWorkspace.init(allocator, config),
-            .hot_processor = try HigherOrderThought.init(allocator, config),
-            .pp_hierarchy = try PredictiveProcessing.init(allocator, config),
-            .ast_attention = try AttentionSchemaTheory.init(allocator, config),
-            .quantum_system = QuantumConsciousness.init(allocator),
-        };
+// Conceptual: How predictive processing might be studied
+const PredictiveResearch = struct {
+    pub fn studyPredictiveHierarchy(predictions: PredictionData) HierarchyAnalysis {
+        // Research tool for studying predictive processing
+        // Analyze how predictions are generated and updated
     }
     
-    pub fn deinit(self: *Self) void {
-        self.gwt_workspace.deinit();
-        self.hot_processor.deinit();
-        self.pp_hierarchy.deinit();
-        self.ast_attention.deinit();
-        self.quantum_system.deinit(self.allocator);
-    }
-    
-    // Process consciousness through all theories simultaneously
-    pub fn processConsciousness(self: *Self, input: ConsciousnessInput) !ConsciousnessOutput {
-        // Run all theories in parallel (conceptually)
-        const iit_result = self.iit_processor.process(input);
-        const gwt_result = try self.gwt_workspace.process(input);
-        const hot_result = try self.hot_processor.process(input);
-        const pp_result = try self.pp_hierarchy.process(input);
-        const ast_result = try self.ast_attention.processAttentionSchema(input.sensory);
-        const quantum_result = self.quantum_system.checkQuantumCollapse(input.timestamp);
-        
-        // Integrate results using weighted voting
-        return self.integrateTheoryResults(.{
-            .iit = iit_result,
-            .gwt = gwt_result,
-            .hot = hot_result,
-            .predictive = pp_result,
-            .attention = ast_result,
-            .quantum = quantum_result,
-        });
-    }
-    
-    // Theory integration with modern patterns
-    fn integrateTheoryResults(self: *Self, results: TheoryResults) ConsciousnessOutput {
-        const weights = self.computeTheoryWeights(results);
-        
-        // Weighted integration of consciousness measures
-        var integrated_phi: f64 = 0.0;
-        var theory_agreement: f64 = 0.0;
-        var consciousness_votes: u8 = 0;
-        
-        // IIT contribution
-        integrated_phi += results.iit.phi * weights.iit;
-        if (results.iit.phi > 0.3) consciousness_votes += 1;
-        
-        // GWT contribution
-        integrated_phi += @as(f64, @floatFromInt(@intFromBool(results.gwt.is_conscious))) * weights.gwt;
-        if (results.gwt.is_conscious) consciousness_votes += 1;
-        
-        // HOT contribution
-        integrated_phi += results.hot.consciousness_level * weights.hot;
-        if (results.hot.consciousness_level > 0.7) consciousness_votes += 1;
-        
-        // Predictive processing contribution
-        const pp_consciousness = 1.0 - results.predictive.prediction_error;
-        integrated_phi += pp_consciousness * weights.predictive;
-        if (pp_consciousness > 0.6) consciousness_votes += 1;
-        
-        // Attention schema contribution
-        integrated_phi += results.attention.consciousness_level * weights.attention;
-        if (results.attention.consciousness_level > 0.5) consciousness_votes += 1;
-        
-        // Quantum contribution (binary)
-        if (results.quantum) {
-            integrated_phi += 0.2 * weights.quantum; // Modest quantum contribution
-            consciousness_votes += 1;
-        }
-        
-        // Compute theory agreement
-        theory_agreement = @as(f64, @floatFromInt(consciousness_votes)) / 6.0;
-        
-        return ConsciousnessOutput{
-            .phi_measure = integrated_phi,
-            .is_conscious = consciousness_votes >= 4, // Majority vote
-            .consciousness_level = integrated_phi,
-            .theory_agreement = theory_agreement,
-            .confidence = theory_agreement * integrated_phi,
-            .active_theories = consciousness_votes,
-        };
+    pub fn analyzePredictionError(errors: []PredictionError) ErrorAnalysis {
+        // Study how prediction errors drive learning
+        // Understand consciousness through prediction
     }
 };
 ```
 
-This implementation incorporates current research findings with modern Zig patterns for optimal performance and clarity in consciousness computation. 
+#### Research Questions
+- How do predictive hierarchies generate conscious experience?
+- What role does prediction error play in consciousness?
+- Can predictive models explain subjective experience?
+
+### 5. **Attention Schema Theory**
+
+#### Theoretical Foundation
+Developed by Michael Graziano, proposing consciousness as the brain's model of attention.
+
+**Key Concepts:**
+- **Attention Schema**: Brain's model of its own attention
+- **Social Attention**: Understanding others' attention
+- **Consciousness**: Emerges from attention modeling
+
+#### Research Applications
+```zig
+// Conceptual: How attention schema might be studied
+const AttentionSchemaResearch = struct {
+    pub fn studyAttentionModeling(attention: AttentionData) AttentionAnalysis {
+        // Research tool for studying attention schemas
+        // Analyze how attention is modeled by the brain
+    }
+    
+    pub fn analyzeSocialAttention(social_data: SocialAttentionData) SocialAnalysis {
+        // Study how social attention contributes to consciousness
+        // Understand attention in social contexts
+    }
+};
+```
+
+#### Research Questions
+- How does the brain model its own attention?
+- What is the relationship between attention and consciousness?
+- How does social attention contribute to conscious experience?
+
+## Comparative Theory Analysis
+
+### Multi-Theory Research Framework
+```zig
+// Conceptual: How different theories might be compared
+const TheoryComparison = struct {
+    pub fn compareTheories(theories: []ConsciousnessTheory, scenario: TestScenario) ComparisonResults {
+        // Systematic comparison of how different theories handle the same data
+        // Identify areas of agreement and disagreement between theories
+    }
+    
+    pub fn analyzeTheoryIntegration(combination: TheoryCombination) IntegrationAnalysis {
+        // Study how different theories might work together
+        // Explore multi-theory approaches to consciousness
+    }
+};
+```
+
+### Research Questions for Theory Comparison
+- Which theories make similar predictions about consciousness?
+- Where do different theories fundamentally disagree?
+- Can multiple theories be integrated into a unified framework?
+- What experimental evidence supports or challenges each theory?
+
+## Research Applications
+
+### Academic Research Support
+This theoretical framework supports:
+
+- **Comparative consciousness studies** across different theories
+- **Computational modeling** of consciousness theories
+- **Educational tools** for consciousness theory learning
+- **Empirical validation** of theoretical predictions
+
+### Educational Applications
+Theory exploration tools for:
+
+- **Philosophy of mind** courses
+- **Cognitive science** programs
+- **Neuroscience** education
+- **Interdisciplinary consciousness studies**
+
+## Research Methodology
+
+### Theoretical Validation
+Approaches for validating consciousness theories:
+
+1. **Mathematical Consistency**: Verify internal logical coherence
+2. **Empirical Grounding**: Compare predictions with experimental data
+3. **Computational Feasibility**: Assess whether theories can be implemented
+4. **Explanatory Power**: Evaluate how well theories explain consciousness phenomena
+
+### Comparative Analysis
+Methods for comparing theories:
+
+1. **Prediction Comparison**: Test theories on identical scenarios
+2. **Explanatory Scope**: Compare what phenomena each theory addresses
+3. **Empirical Support**: Evaluate experimental evidence for each theory
+4. **Integration Potential**: Assess how theories might work together
+
+## Limitations and Considerations
+
+### Theoretical Limitations
+- **Hard Problem**: Theories may explain function but not experience
+- **Subjective Experience**: Difficult to validate claims about consciousness
+- **Measurement Challenges**: Consciousness may not be directly measurable
+- **Philosophical Complexity**: Fundamental questions remain unresolved
+
+### Research Scope
+This framework is designed to:
+- **Study computational models** of consciousness theories
+- **Compare theoretical approaches** to consciousness
+- **Provide educational tools** for consciousness research
+- **Support empirical validation** of consciousness theories
+
+This framework is **NOT** designed to:
+- Create artificial consciousness
+- Solve the hard problem of consciousness
+- Make definitive claims about consciousness nature
+- Replace philosophical inquiry about consciousness
+
+## Future Research Directions
+
+### Theoretical Development
+1. **Theory integration** approaches
+2. **Novel consciousness theories** exploration
+3. **Computational complexity** analysis of consciousness
+4. **Experimental validation** methods
+
+### Collaborative Opportunities
+- **Philosophy departments** for theoretical grounding
+- **Neuroscience labs** for empirical validation
+- **Computer science** for computational modeling
+- **Psychology programs** for consciousness research
+
+---
+
+**Disclaimer**: This framework is for **research purposes only** to study consciousness theories through computational modeling. It does not claim to create consciousness or solve fundamental questions about consciousness nature.
+
+**Contact**: [Research collaboration contact information] 
