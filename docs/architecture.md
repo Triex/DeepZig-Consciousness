@@ -30,13 +30,13 @@ Support comparative studies across consciousness theories:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                  Research Platform                         │
+│                  Research Platform                          │
 ├─────────────────────────────────────────────────────────────┤
-│ Experiment Design │ Data Collection │ Theory Comparison    │
+│ Experiment Design │ Data Collection │ Theory Comparison     │
 ├─────────────────────────────────────────────────────────────┤
-│ IIT Analysis      │ GWT Analysis    │ HOT Analysis        │
+│ IIT Analysis      │ GWT Analysis    │ HOT Analysis          │
 ├─────────────────────────────────────────────────────────────┤
-│ Validation Tools  │ Visualization   │ Publication Support │
+│ Validation Tools  │ Visualization   │ Publication Support   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
